@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule Manager</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imgs/icon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <a href="" id="header-link">
+            <img src="imgs/header-img.svg" alt="herader image" class="header-img">
+        </a>
+        <div class="header-title">Schedule Manager</div>
+    </header>
+    <main>
+        <section class="side left">
+            <div class="section-title">TODO</div>
+            <form action="" id="form">
+                <input type="text" class="list" id="input" autocomplete="off" placeholder="Enter TODO here">
+            </form>
+            <br>
+            <ul class="list-container" id="list-container"></ul>
+        </section>
+
+        <section class="center">
+            <div class="statusbar" id="statusbar">
+            </div>
+            <div class="operationbar">
+                <div class="back btn" onclick="chengeMonth(-1)">
+                    B
+                </div>
+                <div class="forward btn" onclick="chengeMonth(1)">
+                    F
+                </div>
+            </div>
+            <div class="day-bar">
+                <div class="day">Sun</div>
+                <div class="day">Mon</div>
+                <div class="day">Tue</div>
+                <div class="day">Wed</div>
+                <div class="day">Thu</div>
+                <div class="day">Fri</div>
+                <div class="day">Sat</div>
+            </div>
+            <div class="calender" id="calender"></div>
+        </section>
+
+        <section class="side right">
+            <div class="section-title">Today's Schedule</div>
+            <ul class="schedule-container" id="schedule-container"></ul>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+
